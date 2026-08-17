@@ -4,7 +4,7 @@ A desktop file-search engine built in **C++17** with a **Qt Widgets** GUI. It in
 
 ![Main Dashboard](main-dashboard.png)
 
----
+--
 
 ## Table of Contents
 
