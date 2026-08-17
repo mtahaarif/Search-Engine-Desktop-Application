@@ -2,7 +2,7 @@
 
 A desktop file-search engine built in **C++17** with a **Qt Widgets** GUI. It indexes a local folder of `.txt` documents using a hand-written **Trie (prefix tree)** and answers **Boolean (AND / OR) keyword and prefix queries** against them through a Google-style interface — a search box, a paginated results list with titles and snippets, and a full-document reading view.
 
-This project was built as a Data Structures course project (4th Semester, Bachelor of Computer Engineering) to demonstrate an efficient, from-scratch text-indexing structure rather than relying on an external search/database library.
+![Main Dashboard](main-dashboard.png)
 
 ---
 
@@ -118,6 +118,7 @@ The `SearchEngine` class is the core data structure, implemented entirely in a s
 | Browsing history | `std::stack<string>` (two stacks: back/forward) | Classic two-stack browser history pattern (implemented, not wired to UI) |
 
 ## Application Flow
+![Flowchart](flowchart.png)
 
 ```
 main.cpp
@@ -207,6 +208,7 @@ Launch the resulting `GUI` (`GUI.exe` on Windows) executable.
 1. On launch, the home screen lists the indexed directory's files and shows the search box.
 2. Enter a search term or Boolean query (e.g. `security AND network`, `cat OR dog`, or a bare prefix like `net`) and press the search button.
 3. Click any result title to read the full document; click Home to search again.
+![Output](output.png)
 
 ## Complexity Analysis
 
